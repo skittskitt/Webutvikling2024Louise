@@ -6,30 +6,62 @@
         <title>Kontakt oss</title>
     </head>
     <body>
-            <header>
-                <a href="index.html"><h1>TV</h1></a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">Hjem</a>
-                        </li>
-                        <li>
-                            <a href="https://www.google.com">Google</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Kontakt oss</a>
-                        </li>
-                        <li>
-                            <a href="about.html">Om oss</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <section>
-                    <h2>Kontakt oss</h2>
-                </section>
-            </main>
-            <footer>2024 Louise</footer>
+        <header>
+            <a href="index.html"><h1>TV</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="https://www.google.com">Google</a></li>
+                    <li><a href="contact.html">Kontakt oss</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section> <!--<section vill helst ha en <h2> eller mindre overskrift -->
+                <h2>Kontakt oss</h2>
+            </section>
+            <section>
+                <h2>Ta kontakt med oss i dag!</h2>
+                <form method="post">
+                    <label for="navn"> Navn:</label><!--!!!<input> er en selvlukkende tag-->
+                    <label>
+                        <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="45" required>
+                    </label>
+                    <label>
+                        E-post: 
+                        <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label>
+                        Emne: 
+                        <input type="text" name="emne" placeholder="Hva handler det om?">
+                    </label>
+                    <label>
+                        Melding: 
+                        <textarea name="melding" required></textarea> <!--Skal ikke ha type-->
+                        <!--textarea boksen kan endres i størrelse med motsettning til de andre textboksene.-->
+                    </label>
+                    <label> <!--name="valg knytter radio sammen"-->
+                        Nei <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Ja <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Kanskje <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Favoritt mat: 
+                        <select name="fav">
+                            <option value="Pizza">Pizza</option>
+                            <option value="Sushi">Sushi</option>
+                            <option value="Kebab">Kebab</option>
+                        </select>
+                    </label>
+                    <input type="submit" value="Send melding">
+                </form>
+            </section>
+        </main>
+        <footer>2024 Louise</footer>
     </body>
 </html>
