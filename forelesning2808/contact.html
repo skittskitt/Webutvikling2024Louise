@@ -25,9 +25,11 @@
                 <h2>Ta kontakt med oss i dag!</h2>
                 <form method="post">
                     <label for="navn"> Navn:</label><!--!!!<input> er en selvlukkende tag-->
-                    <label>
-                        <input type="text" name="navn" placeholder="Nora Nordmann.." id="navn" maxlength="45" required>
-                    </label>
+                <label>
+                    <input type="text" name="navn" placeholder="Skriv navn her..." id="navn" 
+                    required maxlength="45" minlenght="2">
+                </label>
+                </form>
                     <label>
                         E-post: 
                         <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
