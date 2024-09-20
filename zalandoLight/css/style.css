@@ -1,3 +1,72 @@
+html{
+    font-size: 18px;
+}
+
+/*Kontrollerer at bredden på alle boksene blir det vi har satte dem som*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img{
     width: 100%;
+    max-width: 400px;
+}
+
+#main-logo{
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+/*Flex gjør det lettere å styre layout i en kontainer.  
+Vi kan bruke gap, men den kan bare brukes på flex eller grid.*/
+.flex-menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.flex-menu a{
+    text-decoration: none;
+    color: #000;
+}
+  
+.flex-space-b{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-space-b h2{
+    width: 100%;
+}
+
+.flex-space-b form{
+    position: relative;
+}
+
+.flex-space-b form label{
+    visibility: hidden;
+    position: absolute;
+}
+
+#outlet{
+    color:#ff0000;
+}
+.product-card {
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 10px 10px 10px -5px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
 }
