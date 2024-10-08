@@ -11,6 +11,65 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /*fr står for fraction, hvor stor brøkdel som tar plass.*/
+    grid-template-rows: auto auto auto; /*auto: høyde på radene skal være baser på innholdet. 
+                                        Eventuelt: repeat(3, auto)*/
+    row-gap: 2rem;
+}
+
+#global-header{ /*Når vi strekker header utover hele raden skriver vi 1-4 fordi vi teller linjene på gridet.*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /*grid-column: 1/ 4*/
+    grid-row: 1 / 2;
+}
+
+#banner{
+    display: flex;
+    flex: wrap;
+
+    img{
+        max-width: 70%;
+    }
+}
+
+main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+main nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+
+    a{
+        color: #a4a4a4;
+    }
+}
+
+#category-menu{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#category-menu nav ul{
+    list-style: none;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
 img{
     width: 100%;
     max-width: 400px;

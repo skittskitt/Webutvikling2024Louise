@@ -7,38 +7,29 @@
     <title>Sko</title>
 </head>
 <body>
-    <header>
-        <img id="main-logo" src="img/Zalando-Logo.png" alt="Nettsted Logo">
-        <nav class="flex-space-b">
-            <ul class="flex-menu">
-                <li><a href="#">Nyheter</a></li>
-                <li><a href="#">Nordisk stil</a></li>
-                <li><a href="#">Klær</a></li>
-                <li><a href="#">Sko</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Streewear</a></li>
-                <li><a href="#">Sport</a></li>
-                <li><a href="#">Designer</a></li>
-                <li><a href="#" id="outlet">Outlet</a></li>
-            </ul>
-            <form>
-                <label for="search">Søk</label>
-                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                <input type="submit" value="søk">
-            </form>
-        </nav>
-    </header>
-
-    <main>
-        <nav>
-            <ul>
-                <li><a href="#">Dame -></a></li>
-                <li>Sko</li>
-            </ul>
-        </nav>
-
-        <h1>Sko til dame</h1>
-        <aside>
+    <div id="grid-container">
+        <header id="global-header">
+            <img id="main-logo" src="img/Zalando-Logo.png" alt="Nettsted Logo">
+            <nav class="flex-space-b">
+                <ul class="flex-menu">
+                    <li><a href="#">Nyheter</a></li>
+                    <li><a href="#">Nordisk stil</a></li>
+                    <li><a href="#">Klær</a></li>
+                    <li><a href="#">Sko</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Streewear</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Designer</a></li>
+                    <li><a href="#" id="outlet">Outlet</a></li>
+                </ul>
+                <form>
+                    <label for="search">Søk</label>
+                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                    <input type="submit" value="søk">
+                </form>
+            </nav>
+        </header>
+        <aside id="category-menu">
             <nav>
                 <ul>
                     <li>
@@ -53,81 +44,89 @@
                 </ul>
             </nav>
         </aside>
-
-        <section>
-            <h2>Proudkter</h2>
-            <form>
-                <select name="brand">
-                    <option value="adidas">Adidas</option>
-                    <option value="aldo">Aldo</option>
-                    <option value="arkk">ARKK Copenhagen</option>
-                    <option value="bianoc">Bianco</option>
-                </select>
-                <select name="sort">
-                    <option value="new">New</option>
-                    <option value="low">Lavest pris</option>
-                    <option value="high">Høyest pris</option>
-                </select>
-            </form>
-            
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#">Dame -></a></li>
+                    <li>Sko</li>
+                </ul>
+            </nav>
+        <h1>Sko til dame</h1>
             <section>
-                <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-               </article>
-               <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-                </article>
-                <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-                </article>
-                <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-               </article>
-               <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-                </article>
-                <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-                </article>
-                <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-               </article>
-               <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-                </article>
-                <article>
-                    <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
-                    <a href="#">Nike Sportwear V2K</a>
-                    <a href="#"><h3>Handbal Spezial</h3></a>
-                    <p>1299</p>
-                </article>
+                <h2>Proudkter</h2>
+                <form>
+                    <select name="brand">
+                        <option value="adidas">Adidas</option>
+                        <option value="aldo">Aldo</option>
+                        <option value="arkk">ARKK Copenhagen</option>
+                        <option value="bianoc">Bianco</option>
+                    </select>
+                    <select name="sort">
+                        <option value="new">New</option>
+                        <option value="low">Lavest pris</option>
+                        <option value="high">Høyest pris</option>
+                    </select>
+                </form>
+                
+                <section class="flex-space-b">
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/sko.png" alt="Nike Sportwear V2K Joggesko">
+                        <a href="#">Nike Sportwear V2K</a>
+                        <a href="#"><h3>Handbal Spezial</h3></a>
+                        <p>1299</p>
+                    </article>
+                </section>
             </section>
-        </section>
-    </main>
-    <footer>Zalando Light 2024</footer>
+        </main>
+        <footer>Zalando Light 2024</footer>
+    </div>
 </body>
 </html>
