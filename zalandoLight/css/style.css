@@ -129,3 +129,45 @@ Vi kan bruke gap, men den kan bare brukes på flex eller grid.*/
     border-radius: 4px;
     padding: 1rem;
 }
+
+#menu {
+    display: flex;
+}
+
+/*Media querie bør ligge nederst*/
+/*Fra minimum 800px, skal ikke burgeren vises.*/
+/*Desktop*/
+@media only screen and (min-width:800px) {
+    .fa-burger {
+        display: none;
+    }
+    #menu {
+        display: flex !important;
+    }
+}
+
+/*Mobil*/
+@media only screen and (max-width:800px) {
+    #menu{
+        display: none;
+    }
+    #grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    header, main, aside, footer{
+        grid-column: 1/2;
+    }
+    header{
+        grid-row: 1/2;
+    }
+    main{
+        grid-row: 2/3;
+    }
+    aside{
+        display: none;
+    }
+    footer{
+        grid-row: 3/4;
+    }
+}
