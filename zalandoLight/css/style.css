@@ -1,5 +1,5 @@
 html{
-    font-size: 18px;
+    font-size: calc(1em + 1vw);
 }
 
 /*Kontrollerer at bredden på alle boksene blir det vi har satte dem som*/
@@ -10,6 +10,12 @@ html{
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1{font-size: 2rem;}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.4rem;}
+p, a{font-size: 1rem;}
 
 #grid-container{
     display: grid;
@@ -29,10 +35,20 @@ body{
 #banner{
     display: flex;
     flex: wrap;
-
+    background-color: #dddddd;
+    justify-content: space-between;
     img{
-        max-width: 70%;
+        max-width: 100%;
     }
+}
+
+#banner div{
+    width: 30%;
+    padding: 0.5rem;
+}
+
+#banner div h2{
+    font-size: 1rem;
 }
 
 main{
@@ -137,13 +153,15 @@ Vi kan bruke gap, men den kan bare brukes på flex eller grid.*/
 /*Media querie bør ligge nederst*/
 /*Fra minimum 800px, skal ikke burgeren vises.*/
 /*Desktop*/
-@media only screen and (min-width:800px) {
+@media only screen and (min-width: 800px) {
     .fa-burger {
         display: none;
     }
     #menu {
         display: flex !important;
     }
+    h3{font-size: 1.2rem;}
+    p, a{font-size: 0.6rem;}
 }
 
 /*Mobil*/

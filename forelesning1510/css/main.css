@@ -1,0 +1,27 @@
+.flex-container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+form {
+  background-color: #fff;
+  padding: 3rem;
+  color: rgb(32, 32, 32);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  gap: 0.5rem;
+}
+form input {
+  padding: 1rem;
+  border: 1px solid rgb(32, 32, 32);
+}
+
+body {
+  background-color: #b0e8d3;
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */
