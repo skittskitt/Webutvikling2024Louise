@@ -7,21 +7,75 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <!--søkefelt, navigasjon, logo plassert i midten av
-        menypunktene og ikoner-->
+    <header id="global-header">
+        <a href="index.html"><img id="main-logo" src="https://picsum.photos/id/82/100/100" alt="Nettsted Logo"></a>
+        <form>
+            <label>
+                søk: 
+                <input type="search" placeholder="Skriv her..." id="search">
+            </label>
+        </form>
         <nav>
-        <!--hjem, produkter, kategorier, kontakt oss.-->
-        <!--Brødsmulesti-->
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+            </ul>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </header>
     <main>
-    <!--Et hovedområde: et område med produktbilder, et område med produktnavn-->
-    <!--Et sideområde for relaterte/liknede produkter, minimum 4 produktkort-->
+        <!--Brødsmulesti-->
+        <nav>
+            <ul>
+                <li><a href="#">Produkter ></a></li>
+            </ul>
+        </nav>
+        <section>
+            <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
+            <img src="https://picsum.photos/id/9/200/100" alt="Macbook Air">
+            <img src="https://picsum.photos/id/9/200/100" alt="Macbook Air">
+            <img src="https://picsum.photos/id/9/200/100" alt="Macbook Air">
+        </section>
+        <section>
+            <h2>Mac Book Air</h2>
+            <p>MEKRENAVN</p>
+            <p>4 999,-</p>
+            <p>Farge: Sølv</p>
+        </section>
+        <section>
+            <article>
+                <h3>De mest populære</h3>
+                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
+                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
+                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
+                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
+            </article>
+        </section>
     </main>
-    <footer>
-    <!--seksjon 1(logo og ingress), seksjon 2(kontakt),
-    seksjon 3(snarveier), seksjon 4(sosiale medier)-->
+    <footer id="kontakt">
+        <section>
+            <a href="index.html"><img src="https://picsum.photos/id/82/100/100" alt="logo"></a>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p> 
+        </section>
+        <section>
+            <h3>Kontakt</h3>
+            <p>Adresse: B R A Veien 4, 1757 Halden</p>
+            <p>Telefon: 69 60 80 00</p>
+            <p>E-post:</p>
+            <p>Apningstider: 08:00 - 22:00</p>
+        </section>
+        <section>
+            <h3>Snarveier</h3>
+            <a href="#">Produkter</a>
+            <a href="#">Kategorier</a>
+            <a href="#">Om oss</a>
+        </section>
+        <section>
+            <h3>Sosiale medier</h3>
+            <!--instagram, facebook, linkein, pinterest-->
+        </section>
     </footer>
 </body>
 </html>

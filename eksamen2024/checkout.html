@@ -7,34 +7,120 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <!--søkefelt, navigasjon, logo plassert i midten av
-        menypunktene og ikoner-->
+    <header id="global-header">
+        <a href="index.html"><img id="main-logo" src="https://picsum.photos/id/82/100/100" alt="Nettsted Logo"></a>
+        <form>
+            <label>
+                søk: 
+                <input type="search" placeholder="Skriv her..." id="search">
+            </label>
+        </form>
         <nav>
-        <!--hjem, produkter, kategorier, kontakt oss.-->
-        <!--Brødsmulesti-->
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+            </ul>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </header>
     <main>
         <section>
-        <!--Seksjon 1(shoppingbagen)
-        Minimum 2 produktkort
-        Et produktkort skal inneholde et bile, produktnavn, pris, farge-->         
+            <article> <!--Handlekurv-->
+                <h2>Mac Book Air</h2>
+                <img src="https://picsum.photos/id/9/300/200"></a>
+                <p>4 999,-</p>
+                <p>Farge: Sølv</p>
+            </article>
+            <article>
+                <h2>Mac Book Air</h2>
+                <img src="https://picsum.photos/id/9/300/200"></a>
+                <p>4 999,-</p>
+                <p>Farge: Sølv</p>
+            </article>       
         </section>
-        <section>
-        <!--seksjon 2 (personopplysninger)-->
-        <!--Skjema som tat i mot fornavn, etternavn, gateadresse, poststed,
-        lagre og avbryt knapp.-->
+        <section><!--personopplysninger-->
+            <form>
+                Fornavn
+                <label>
+                   <input type="text" placeholder="Skriv fornavn..."></type> 
+                </label>
+                Etternavn
+                <label>
+                    <input type="text" placeholder="Skriv etternavn..."></type> 
+                </label>
+                gateadresse
+                <label>
+                    <input type="text" placeholder="Skriv gateadresse..."></type> 
+                </label>
+                Poststed
+                <label>
+                    <input type="text" placeholder="Skriv Poststed..."></type> 
+                </label>
+                <button type="button">Lagre</button>
+                <button type="button">Avbryt</button>
+            </form>
         </section>
-        <section>
-        <!--seksjon 3(levering)-->
+        <section><!--Levering-->
+            <form>
+                Levering
+                <label>
+                    Ekspresslevering Hjem
+                    <input type="radio" name="levering" value="levering">
+                </label>
+                <label>
+                    Ekspress pakke til utleveringsted
+                    <input type="radio" name="levering" value="levering">
+                </label>
+                <label>
+                    Standard hjemlevering
+                    <input type="radio" name="levering" value="levering">
+                </label>
+            </form>
         </section>
-        <section>
-        <!--seksjon 4(betaling)-->
+        <section><!--Betaling-->
+            <form>
+                Kortnummer
+                <label>
+                    <input type="text"></type> 
+                </label>
+                Utløpsdato
+                <input type="text"></type>
+                CVC/CVV
+                <input type="text"></type>
+                <p>Å inkl. mva.</p>
+                <p>4 999,-</p>
+                <button type="button">Fullfør kjøp</button>
+                <p>Du bekrefter herved at opplysningene og dokumentene du har
+                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                    uriktige eller ufulstendige opplysninger.</p>
+            </form>
         </section>
     </main>
-    <footer>
-    <!--Tilgjengelighetserklæring-->
+    <footer id="kontakt">
+        <section>
+            <a href="index.html"><img src="https://picsum.photos/id/82/100/100" alt="logo"></a>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p> 
+        </section>
+        <section>
+            <h3>Kontakt</h3>
+            <p>Adresse: B R A Veien 4, 1757 Halden</p>
+            <p>Telefon: 69 60 80 00</p>
+            <p>E-post:</p>
+            <p>Apningstider: 08:00 - 22:00</p>
+        </section>
+        <section>
+            <h3>Snarveier</h3>
+            <a href="#">Produkter</a>
+            <a href="#">Kategorier</a>
+            <a href="#">Om oss</a>
+        </section>
+        <section>
+            <h3>Sosiale medier</h3>
+            <!--instagram, facebook, linkein, pinterest-->
+        </section>
     </footer>
 </body>
 </html>
