@@ -20,43 +20,97 @@ header {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
 
-    background-color: #e5eaee;
     text-align: center;
 }
-nav ul {
+nav {
     display: flex;
-    gap: 1rem;
-    list-style: none;
     align-items: center;
+    justify-content: space-around;
+        ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        align-items: center;
+            a {
+                text-decoration: none;
+            }
+        }
+
+        form {
+            position: relative;
+        }
 }
 
-.navigation {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.main-logo {
+    width: 30%;
 }
 
-#main-logo {
-    width: 40%;
-}
-
-main {
+main {      
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
-    background-color: #ddd1df;
+    padding: 1rem;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#produktside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#product {
+    max-width: 700px;
+}
+
+#product-text {
+    max-width: 440px;
+}
+
+#product-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+.anmeldelse {
+    max-width: 289px;
+    img {
+        width: 100%;
+    }
 }
 
 footer {
-    display: grid;
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    padding: 1rem;
     background-color: rgb(40, 40, 40);
     color: #fff;
+
+    p {
+        width: 100%;
+    }
+    img {
+        width: 5%;
+    }
+    a{
+        text-decoration: none;
+    }
 }
 
 footer section{
-    flex-wrap: wrap;
+    padding: 1rem;
 }
 
 /*Desktop*/
