@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produkt-side</title>
+    <link rel="stylesheet" href="ikoner/css/solid.css">
+    <link rel="stylesheet" href="ikoner/css/fontawesome.css">
+    <link rel="stylesheet" href="ikoner/css/brands.css">
     <link rel="stylesheet" href="css/main.css">
+    <title>Produkt-side</title>
 </head>
 <body>
-    <div id="grid-container"></div>
+    <div id="grid-container">
     <header>
         <nav>
             <form>
@@ -20,9 +23,9 @@
             </form>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#produkter">Produkter</a></li>
-                <li><a href="index.html"></a><img class="main-logo" src="img/logo-eksamen.png" alt="Nettsted Logo"></li>
-                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="index.html#pop-produkter">Produkter</a></li>
+                <li><a href="index.html"><img class="main-logo" src="img/logo-eksamen.png" alt="Nettsted Logo"></a></li>
+                <li><a href="index.html#kategorikort">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
             <p> 
@@ -32,47 +35,93 @@
             </p>
         </nav>
     </header>
-    <main id="produktside">
-        <!--Brødsmulesti-->
-        <nav>
+    <main id="produkt-side">
+        <nav class="breadcrumbs">
             <ul>
-                <li><a href="#">Produkter ></a></li>
+                <li><a href="index.html">Hjem ></a></li>
+                <li><a href="index.html#kategorikort">Kategorier ></a></li>
+                <li><a href="product.html">Produktnavn</a></li>
             </ul>
-        </nav>
-        <section id="product">
-            <picture>
-                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
+    </nav>
+        <section id="product-section-left">
+            <picture class="product-img">
+                <img src="https://picsum.photos/id/9/545/400" alt="Macbook Air">
+            </picture>
+            <picture class="product-img">
+                <img src="https://picsum.photos/id/9/160/100" alt="Macbook Air">
+            </picture>
+            <picture class="product-img">
+                <img src="https://picsum.photos/id/9/160/100" alt="Macbook Air">
+            </picture>
+            <picture class="product-img">
+                <img src="https://picsum.photos/id/9/160/100" alt="Macbook Air">
             </picture>
         </section>
-        <section id="product-text">
+        <section id="text-section-right">
             <h2>Mac Book Air</h2>
             <p>MEKRENAVN</p>
             <p>4 999,-</p>
             <p>Farge: Sølv</p>
         </section>
-        <section id="product-img">
-            <picture>
-                <img src="https://picsum.photos/id/9/200/100" alt="Macbook Air">
-            </picture>
-            <picture>
-                <img src="https://picsum.photos/id/9/200/100" alt="Macbook Air">
-            </picture>
-            <picture>
-                <img src="https://picsum.photos/id/9/200/100" alt="Macbook Air">
-            </picture>
-        </section>
-        <section>
-            <article>
-                <h3>De mest populære</h3>
-                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
-                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
-                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
-                <img src="https://picsum.photos/id/9/300/200" alt="Macbook Air">
+
+        <aside id="pop-produkter">
+            <h3>Liknede Produkter</h3>
+            <a href="product.html"><article class="produkt">
+                <img src="https://picsum.photos/id/9/350/250" alt="Macbook Pro Air">
+                <p>MacBook Air</p>
+                <p>Kr. 4 999,-</p>
+                <p>Vurderinger:</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </p></a>
             </article>
-        </section>
+            <article class="produkt">
+                <a href="product.html"><img src="https://picsum.photos/id/9/350/250" alt="Macbook Pro Air">
+                <p>MacBook Air</p>
+                <p>Kr. 4 999,-</p>
+                <p>Vurderinger:</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </p></a>
+            </article>
+            <article class="produkt">
+                <a href="product.html"><img src="https://picsum.photos/id/9/350/250" alt="Macbook Pro Air">
+                <p>MacBook Air</p>
+                <p>Kr. 4 999,-</p>
+                <p>Vurderinger:</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </p></a>
+            </article>
+            <article class="produkt">
+                <a href="product.html"><img src="https://picsum.photos/id/9/350/250" alt="Macbook Pro Air">
+                <p>MacBook Air</p>
+                <p>Kr. 4 999,-</p>
+                <p>Vurderinger:</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </p></a>
+            </article>
+        </aside>
     </main>
     <footer>
-        <img src="img/logo-eksamen.png" alt="Nettsted Logo">
+        <img src="img/logo-eksamen.png" class="main-logo" alt="Nettsted Logo">
         <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p> 
         <section id="kontakt">
             <h3>Kontakt</h3>
@@ -90,10 +139,10 @@
         <section>
             <h3>Sosiale medier</h3>
             <p>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-pinterest"></i>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
             </p>
         </section>
     </footer>
